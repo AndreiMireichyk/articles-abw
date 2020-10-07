@@ -7,6 +7,7 @@ let KTDatatableRemoteAjaxDemo = function() {
     // basic demo
     let demo = function() {
 
+
         let datatable = $('#kt_datatable').KTDatatable({
             // datasource definition
             data: {
@@ -22,6 +23,7 @@ let KTDatatableRemoteAjaxDemo = function() {
                             if (typeof raw.data !== 'undefined') {
                                 dataSet = raw.data;
                             }
+                            document.body.scrollIntoView({ behavior: "smooth"})
                             return dataSet;
                         },
                     },
